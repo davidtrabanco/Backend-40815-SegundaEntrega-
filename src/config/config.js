@@ -16,12 +16,12 @@ export default{
 
         MongoDB:{
             usuario: 'davidtrabanco',
-            password: '74108520',
+            password: 'coder1234',
             database: 'ecommerce',
         },
 
         Firebase:{
-            credential: 'ecommerce-76c3e-firebase-adminsdk-jm63v-3d754efeb2.json'
+            credential: 'ecommerce-2b72e-firebase-adminsdk-4mbsp-b4001520d0.json'
         }
 
     },

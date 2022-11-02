@@ -1,6 +1,6 @@
 import knex from "knex";
-import config from "../../../config.js";
-import SQLManager from "../../Containers/SQLManager.js";
+import config from "../../config/config.js";
+import SQLManager from "../../models/SQLManager.js";
 
 //Defino la esquema de la tabla:
 const tableSchema = (table) => {
@@ -36,7 +36,7 @@ class CartsDao extends SQLManager{
 
     addProduct = async (cartId, ProductId) =>{
         //Obtengo el producto:
-        let {productsCtrl} = await import("../../Controller/index.js")
+        let {productsCtrl} = await import("../../controllers/index.js")
         const product = await productsCtrl.getInternal(ProductId);
 
         //elimino el campo _id del producto

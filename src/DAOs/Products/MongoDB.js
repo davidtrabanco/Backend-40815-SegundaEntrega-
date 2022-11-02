@@ -1,5 +1,5 @@
-import MongoDBManager from "../../Containers/mongoDBManager.js";
-import config from "../../../config.js";
+import MongoDBManager from "../../models/mongoDBManager.js";
+import config from "../../config/config.js";
 
 export const schema = {
     title: {type: String, required: true, max: 256},

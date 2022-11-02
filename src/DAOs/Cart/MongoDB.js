@@ -1,5 +1,5 @@
-import MongoDBManager from "../../Containers/mongoDBManager.js";
-import config from "../../../config.js";
+import MongoDBManager from "../../models/mongoDBManager.js";
+import config from "../../config/config.js";
 import {schema as productSchema} from "../Products/MongoDB.js";
 
 
@@ -34,7 +34,7 @@ class CartsDao extends MongoDBManager{
 
     addProduct = async (cartId, ProductId) =>{
         //Obtengo el producto:
-        let {productsCtrl} = await import("../../Controller/index.js")
+        let {productsCtrl} = await import("../../controllers/index.js")
         const product = await productsCtrl.getInternal(ProductId);
 
         //elimino el campo _id del producto

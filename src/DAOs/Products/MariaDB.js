@@ -1,6 +1,6 @@
 import knex from "knex";
-import config from "../../../config.js";
-import SQLManager from "../../Containers/SQLManager.js";
+import config from "../../config/config.js";
+import SQLManager from "../../models/SQLManager.js";
 
 //Defino la esquema de la tabla:
 const tableSchema = (table) => {

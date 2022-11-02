@@ -1,6 +1,6 @@
 import express from "express";
-import {productsRoute} from "./src/router/products.js";
-import {cartRoute} from "./src/router/cart.js";
+import {productsRoute} from "./routes/products.js";
+import {cartRoute} from "./routes/cart.js";
 import dotenv from "dotenv";
 
 //Configuro variables de entorno

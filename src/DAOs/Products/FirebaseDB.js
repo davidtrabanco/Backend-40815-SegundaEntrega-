@@ -1,5 +1,5 @@
-import FirebaseManager from "../../Containers/FirebaseManager.js";
-import config from "../../../config.js";
+import FirebaseManager from "../../models/FirebaseManager.js";
+import config from "../../config/config.js";
 
 const credential = `./${config.DataBases.Firebase.credential}`;
 

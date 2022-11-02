@@ -1,4 +1,4 @@
-import ArrayManager from "../../Containers/ArrayManager.js";
+import ArrayManager from "../../models/ArrayManager.js";
 
 class ProductsDao extends ArrayManager{
     constructor(){

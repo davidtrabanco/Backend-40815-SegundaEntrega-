@@ -1,5 +1,6 @@
 import {Router} from "express";
-const {cartCtrl} = await import("../Controller/index.js")
+const {cartCtrl} = await import("../controllers/index.js")
+
 export const cartRoute = Router();
 
 

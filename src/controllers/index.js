@@ -1,5 +1,6 @@
-import HttpMethods from "./httpMethodsTemp.js";
-import HttpCartMethods from "./httpCartMethodsTemp.js";
+import HttpMethods from "../models/httpMethods.js";
+import HttpCartMethods from "../models/httpCartMethods.js";
+
 import {productsDAO, cartDAO} from "../DAOs/index.js";
 
 //Productos:

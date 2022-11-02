@@ -1,4 +1,4 @@
-import ArrayManager from "../../Containers/ArrayManager.js";
+import ArrayManager from "../../models/ArrayManager.js";
 
 class CartsDao extends ArrayManager{
     constructor(){
@@ -21,7 +21,7 @@ class CartsDao extends ArrayManager{
     }
 
     addProduct = async (cartId, ProductId) =>{
-        let {productsCtrl} = await import("../../Controller/index.js")
+        let {productsCtrl} = await import("../../controllers/index.js")
         //Obtengo el producto:
         const newProduct = await productsCtrl.getInternal(ProductId);
         //Obtengo el carrito:

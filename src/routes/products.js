@@ -1,6 +1,6 @@
 import {Router} from "express";
 import {checkUserPrivileges} from "./Middleware/userPrivileges.js";
-const {productsCtrl} = await import("../Controller/index.js")
+const {productsCtrl} = await import("../controllers/index.js")
 
 //Declaro el router Productos:
 export const productsRoute = Router();

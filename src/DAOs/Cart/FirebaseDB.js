@@ -1,5 +1,5 @@
-import FirebaseManager from "../../Containers/FirebaseManager.js";
-import config from "../../../config.js";
+import FirebaseManager from "../../models/FirebaseManager.js";
+import config from "../../config/config.js";
 
 const credential = `./${config.DataBases.Firebase.credential}`;
 
@@ -23,7 +23,7 @@ class CartsDao extends FirebaseManager{
 
     addProduct = async (cartId, ProductId) =>{
         //Obtengo el producto:
-        let {productsCtrl} = await import("../../Controller/index.js")
+        let {productsCtrl} = await import("../../controllers/index.js")
         const product = await productsCtrl.getInternal(ProductId);
             
         //Obtengo el carrito:
